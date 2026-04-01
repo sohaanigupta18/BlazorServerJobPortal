@@ -21,6 +21,7 @@ namespace BlazorServerJobPortal.Data.Models
         public string? JobLocation { get; set; }
         public bool Active { get; set; } = true;
         public bool Featured { get; set; } = false;
+        [EmailAddress]
         public string? CompanyEmail { get; set; }
         public DateTime DateAdded { get; set; } = DateTime.Now;
     }
